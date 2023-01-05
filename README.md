@@ -16,11 +16,11 @@ Compare the performance of parallel computing with serial computing. We will do 
 ## Methodology
 
 The following steps comprise the methodology for employing embarrassingly parallel computing:
-Processes in Step1:
+### Processes in Step1:
 1. Data has been imported, which is in CSV format. The data contained 100k rows and ten columns.
 2. Preprocessing has been done by filtering the unwanted features. At last, we are settled on four features. The features are - ‘author_id’, ‘book_rating’, ‘publish_year’, and ‘text_lang’, and the target column is ‘book_genre’. A standard scaler is used to make the mean 0.
 3. A random forest classifier is selected. Model training is done in parallel. Training time has been recorded for both with one core and eight cores. This will be shown in the later part of this report.
-Processes in Step2:
+### Processes in Step2:
 1. We are supplying the trained model with the same set of data. Data will be transmitted in parallel, and very quickly, predictions for the entire dataset will be generated.
 2. Compare the overall performance of the parallelised with that of a non-parallelised code. This could involve running equal experiments with a non-parallelised code and evaluating the outcomes to the ones acquired with the parallelised code.
 This technique offers a general framework for enforcing embarrassingly parallel computing on a large dataset and may be tailored to many datasets.
