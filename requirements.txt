@@ -1,0 +1,8 @@
+
+• Python v3.8
+• IDE(Spyder).
+• Carnie
+• Scikit-learn.
+• Pandas.
+• Matplotlib
+• Seaborn
