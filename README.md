@@ -33,7 +33,7 @@ Using 1 core : 12.488 sec.
 Using 8 cores : 2.84 sec
 
 Below screenshots shows the training using 1 core and 8 cores.
-![alt text](images/train.png)
+![alt text](images/cores.png)
 
 In the case of training a model, using parallel processing can be 4.39 times faster than using serial processing. This is because parallel processing allows the training to be divided into smaller parts that can be executed simultaneously on multiple cores or processors, leading to faster completion of the task.
 
