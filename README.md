@@ -1,1 +1,5 @@
 # Reducing-Prediction-Time-Larger-Dataset-Using-Embarassingly-Parallel-Computing
+
+## Overview
+With the use of large sizes, dataset time has always been a crunch. This study investigates the use of multiprocessing and how we can reduce the time for large datasets. So for that, we have taken a dataset where we will be predicting the genres of the books. We will be using built-in parallel processing for training the model and comparing it with others. With new data, we will be using embarrassingly parallel computing to predict, and then we will be comparing with serial processes. We will be implementing this process with the help of a supercomputer. Results tell us that training the model in parallel reduced the time. Similarly, prediction time has been reduced with the use of embarrassingly parallel computing. Varied the dataset size for multiple cores and recorded the time.
+Overall, parallel computing can be a useful tool for speeding up the processing of large datasets. By distributing the workload across multiple processes, you can potentially reduce the amount of time it takes to process the data and take advantage of the multiple cores on your computer.
