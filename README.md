@@ -25,4 +25,13 @@ The following steps comprise the methodology for employing embarrassingly parall
 2. Compare the overall performance of the parallelised with that of a non-parallelised code. This could involve running equal experiments with a non-parallelised code and evaluating the outcomes to the ones acquired with the parallelised code.
 This technique offers a general framework for enforcing embarrassingly parallel computing on a large dataset and may be tailored to many datasets.
 
+## Result
+Training time:
+
+Using 1 core : 12.488 sec.
+Using 8 cores : 2.84 sec
+
+Below screenshots shows the training using 1 core and 8 cores.
+![alt text](images/train.png)
+
 
