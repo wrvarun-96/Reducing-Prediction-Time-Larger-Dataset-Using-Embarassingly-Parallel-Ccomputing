@@ -1,1 +1,1 @@
-# Reducing-Prediction-Time-Larger-Dataset-Using-Embarassingly-Parallel-Ccomputing
+# Reducing-Prediction-Time-Larger-Dataset-Using-Embarassingly-Parallel-Computing
