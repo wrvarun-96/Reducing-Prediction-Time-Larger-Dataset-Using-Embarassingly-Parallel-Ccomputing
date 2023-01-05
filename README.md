@@ -26,12 +26,46 @@ The following steps comprise the methodology for employing embarrassingly parall
 This technique offers a general framework for enforcing embarrassingly parallel computing on a large dataset and may be tailored to many datasets.
 
 ## Result
-Training time:
+
+### Training time:
 
 Using 1 core : 12.488 sec.
 Using 8 cores : 2.84 sec
 
 Below screenshots shows the training using 1 core and 8 cores.
 ![alt text](images/train.png)
+
+In the case of training a model, using parallel processing can be 4.39 times faster than using serial processing. This is because parallel processing allows the training to be divided into smaller parts that can be executed simultaneously on multiple cores or processors, leading to faster completion of the task.
+
+
+### Prediction time:
+
+The time has significantly reduced when new data has been fed to the model. I have done this using carnie and used different cores for different data sizes and recorded time for both serial and parallel. Also, I have calculated SpeedUP and Efficiency.
+Below is the table showing numerical results.
+
+![alt text](images/table1.png)
+![alt text](images/table2.png)
+
+### Graphs
+#### Serial vs Parallel
+How serial and parallel is being used for different cores w.r.t time and size. As the number of cores or processors used for a task increases, the time required to complete the task using parallel processing can be reduced compared to serial processing.
+
+![alt text](images/8.png)
+![alt text](images/16.png)
+![alt text](images/24.png)
+
+#### SpeedUP
+Using multiple cores or processors to perform a task speeds up the completion of the task compared to using a single core or processor. In the case of using 16 cores compared to 8 cores, the speedup is roughly double, and using 24 cores compared to 8 cores can provide a triple speedup. This indicates that increasing the number of cores or processors used for a task can significantly improve its performance and speed up its completion.
+
+![alt text](images/speedup.png)
+
+#### Efficiency
+The efficiency of using multiple cores or processors for a task is similar, regardless of the size. However, as the size of the task increases, the efficiency of using higher numbers of cores or processors may also increase. This is because larger tasks can be divided into smaller parts, which can be executed simultaneously on multiple cores or processors, potentially leading to faster task completion.
+
+![alt text](images/eff.png)
+
+## Conclusion
+In summary, working with large datasets can be very time-consuming, but using embarrassingly parallel computing can help improve the prediction speed for these datasets. By breaking the workload into smaller parts that can be executed simultaneously on multiple cores or processors, the time required for the prediction can be significantly reduced. In general, using embarrassingly parallel computing can be a valuable tool for speeding up a prediction on large datasets.
+
 
 
